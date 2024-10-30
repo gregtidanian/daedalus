@@ -83,7 +83,7 @@ void setupPins() {
     pinMode(20, INPUT_PULLUP);
 }
 
-// Peripheral Initializations
+// Peripheral Initialisations
 #ifdef HAS_I2C
 void init_I2C() {
     Wire.begin(I2C_SDA, I2C_SCL);

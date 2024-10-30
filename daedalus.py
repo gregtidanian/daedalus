@@ -78,8 +78,8 @@ def generate_gpio_mapping_header(net_mappings, peripherals, pin_types, output_pa
                 header_file.write(f"    pinMode({gpio_pin}, INPUT_PULLUP);\n")  # Example for bidirectional
         header_file.write("}\n\n")
 
-        # Peripheral Initializations
-        header_file.write("// Peripheral Initializations\n")
+        # Peripheral Initialisations
+        header_file.write("// Peripheral Initialisations\n")
         if "I2C" in peripherals:
             header_file.write("#ifdef HAS_I2C\n")
             header_file.write("void init_I2C() {\n")
