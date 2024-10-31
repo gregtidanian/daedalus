@@ -83,7 +83,7 @@ Detected Components: {'J3', 'RESET1', 'C2', 'R4', 'R1', 'C5', 'C4', 'R6', 'R5', 
 Detected Peripherals: {'I2C', 'USB', 'UART'}
 GPIO mapping header file generated at: pinmap.h
 ```
-#Future Considerations
+# Future Considerations
 
 It is worth ensuring that netlist files from other electronics design software have enough similarity in their formatting that the tool is compatible with them. If not it could be worth making formatting changes depending on which software is being used. The software being used is mentioned in the netlist file.
 
@@ -98,5 +98,7 @@ A feature for developing firmware test procedures.
 Potentially expanding into a firmware-specific IDE
 
 Considering a version control system based on tracking firmware changes but linking them to electronics designs too.
+
+# References
 
 [1] John from Predictable Designs
