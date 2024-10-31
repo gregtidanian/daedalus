@@ -4,7 +4,7 @@ Having direct access to information within the toolchain you are writing firmwar
 
 The following outlines a command line tool that parses files that an electronics engineer has worked on or generated.
 
-# Initiail Experiment
+# Initial Experiment
 
 The command line tool had the initial goal of:
 
