@@ -1,21 +1,30 @@
+*The following comes entirely from conversations and ideas from [Walter Jacob](https://github.com/jacobw56), founder of [Overkill Projects](https://overkillprojects.com/)*.
+
 Firmware development typically involves referring to information from electronics design files, as well as component datasheets.
 
 Having direct access to information within the toolchain you are writing firmware on, and being able to generate some code directly from electronics design files can reduce the risk of mistakes.
 
 The following outlines a command line tool that parses files that an electronics engineer has worked on or generated.
 
-# Initial Experiment
+# Device Tree Source File Generation
 
+A devicetree is a datastructure that describes hardware to driver models and provides initial hardware configurations for firmware development.
+
+# Hardware
+
+The device tree source file generation will be based on the open source zephyr project [ZSWatch](https://github.com/jakkra/ZSWatch), including the [hardware design files](https://github.com/jakkra/ZSWatch-HW/tree/f00c755fa8d6e1f00ff1e177645d56457bea2659) by [Jakob Krantz](https://github.com/jakkra).
+
+# Pin Map Header File Generation
 The command line tool had the initial goal of:
 
 1. Generating a template header file with hardware-specific information
 2. Printing component and peripheral information to the terminal
 
-# Approaches
+## Approaches
 
 The approaches were to work directly from electronics design files and to work from a generated netlist file.
 
-## Design Files
+### Design Files
 
 Electronics KiCAD design files for a development kit based on the ESP32-S3 microcontroller [1] were initially used as files to test a parsing script on.
 
@@ -53,7 +62,7 @@ The drawbacks of using a netlist file include:
 
 The generated netlist file is _DesignESP32PCB.net_.
 
-The parsing script written is _daedalus.py_ and the generated header file is pinmap.h. The contents of the generated header file include:
+The parsing script written is _pinmapgenerator.py_ and the generated header file is pinmap.h. The contents of the generated header file include:
 
 - Pin definitions
 ```
@@ -83,7 +92,7 @@ Detected Components: {'J3', 'RESET1', 'C2', 'R4', 'R1', 'C5', 'C4', 'R6', 'R5', 
 Detected Peripherals: {'I2C', 'USB', 'UART'}
 GPIO mapping header file generated at: pinmap.h
 ```
-# Future Considerations
+## Future Considerations
 
 It is worth ensuring that netlist files from other electronics design software have enough similarity in their formatting that the tool is compatible with them. If not it could be worth making formatting changes depending on which software is being used. The software being used is mentioned in the netlist file.
 
@@ -99,6 +108,8 @@ Potentially expanding into a firmware-specific IDE
 
 Considering a version control system based on tracking firmware changes but linking them to electronics designs too.
 
+
 # References
 
 [1] John from Predictable Designs
+[2] https://docs.zephyrproject.org/latest/build/dts/index.html
