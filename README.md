@@ -10,7 +10,7 @@ The following outlines a command line tool that parses files that an electronics
 
 A devicetree is a datastructure that describes hardware to driver models and provides initial hardware configurations for firmware development.
 
-# Hardware
+## Hardware
 
 The device tree source file generation will be based on the open source zephyr project [ZSWatch](https://github.com/jakkra/ZSWatch), including the [hardware design files](https://github.com/jakkra/ZSWatch-HW/tree/f00c755fa8d6e1f00ff1e177645d56457bea2659) by [Jakob Krantz](https://github.com/jakkra).
 
