@@ -1,0 +1,756 @@
+/dts-v1/;
+/
+{
+    compatible = "custom,ZSWatch-v2";
+
+    c101 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C101 - C_*";
+    };
+
+    c102 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C102 - C_*";
+    };
+
+    c103 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C103 - C_*";
+    };
+
+    c104 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C104 - C_*";
+    };
+
+    c105 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C105 - C_*";
+    };
+
+    c106 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C106 - C_*";
+    };
+
+    c107 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C107 - C_*";
+    };
+
+    c108 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C108 - C_*";
+    };
+
+    c109 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C109 - C_*";
+    };
+
+    c110 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C110 - C_*";
+    };
+
+    ic101 {
+        compatible = "custom,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias";
+        label = "IC101 - Power.kicad_sch";
+    };
+
+    l101 {
+        compatible = "custom,Inductor_SMD_Kampi:L_0806_2016";
+        label = "L101 - Choke_* *Coil* Inductor_* L_*";
+    };
+
+    l102 {
+        compatible = "custom,Inductor_SMD_Kampi:L_0806_2016";
+        label = "L102 - Choke_* *Coil* Inductor_* L_*";
+    };
+
+    r101 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R101 - R_*";
+    };
+
+    r102 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R102 - R_*";
+    };
+
+    r103 {
+        compatible = "custom,Resistor_SMD:R_0402_1005Metric";
+        label = "R103 - R_*";
+    };
+
+    tp101 {
+        compatible = "custom,TestPoint:TestPoint_Pad_D1.0mm";
+        label = "TP101 - Pin* Test*";
+    };
+
+    tp102 {
+        compatible = "custom,TestPoint:TestPoint_Pad_D1.0mm";
+        label = "TP102 - Pin* Test*";
+    };
+
+    tp103 {
+        compatible = "custom,TestPoint:TestPoint_Pad_D1.0mm";
+        label = "TP103 - Pin* Test*";
+    };
+
+    x101 {
+        compatible = "custom,Molex:78171-0002";
+        label = "X101 - Connector*:*_1x??_*";
+    };
+
+    c201 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C201 - C_*";
+    };
+
+    c202 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C202 - C_*";
+    };
+
+    c203 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C203 - C_*";
+    };
+
+    c204 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C204 - C_*";
+    };
+
+    c206 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C206 - C_*";
+    };
+
+    c207 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C207 - C_*";
+    };
+
+    c208 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C208 - C_*";
+    };
+
+    c209 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C209 - C_*";
+    };
+
+    c210 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C210 - C_*";
+    };
+
+    c211 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C211 - C_*";
+    };
+
+    c212 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C212 - C_*";
+    };
+
+    ic201 {
+        compatible = "custom,Broadcom:Broadcom_DFN-6_2x2mm_P0.65mm";
+        label = "IC201 - Broadcom*DFN*2x2mm*P0.65mm*";
+    };
+
+    ic202 {
+        compatible = "custom,Package_LGA_Kampi:Bosch_LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y";
+        label = "IC202 - Sensors.kicad_sch";
+    };
+
+    ic203 {
+        compatible = "custom,Package_LGA_Kampi:Bosch_LGA-10_2x2mm_P0.5mm_ClockwisePinNumbering";
+        label = "IC203 - Sensors.kicad_sch";
+    };
+
+    ic204 {
+        compatible = "custom,Package_LGA_Kampi:LGA-12_2x2mm_P0.5mm";
+        label = "IC204 - Sensors.kicad_sch";
+    };
+
+    ic205 {
+        compatible = "custom,Package_LGA_Kampi:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering";
+        label = "IC205 - *LGA*3x3mm*P0.8mm*Clockwise*";
+    };
+
+    mk201 {
+        compatible = "custom,Knowles:SPK0641HT4H-1";
+        label = "MK201 - Knowles*LGA*3.5x2.65mm*";
+    };
+
+    q201 {
+        compatible = "custom,Package_TO_SOT_SMD:SOT-323_SC-70";
+        label = "Q201 - P-Channel MOSFET";
+    };
+
+    r201 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R201 - R_*";
+    };
+
+    tp201 {
+        compatible = "custom,TestPoint:TestPoint_Pad_D1.0mm";
+        label = "TP201 - Pin* Test*";
+    };
+
+    tp202 {
+        compatible = "custom,TestPoint:TestPoint_Pad_D1.0mm";
+        label = "TP202 - Pin* Test*";
+    };
+
+    bz301 {
+        compatible = "custom,CUI Devices:CMT-322-65-SMT-TR";
+        label = "BZ301 - *Buzzer*";
+    };
+
+    c301 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C301 - C_*";
+    };
+
+    c302 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C302 - C_*";
+    };
+
+    c303 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C303 - C_*";
+    };
+
+    c304 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C304 - C_*";
+    };
+
+    c305 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C305 - C_*";
+    };
+
+    c306 {
+        compatible = "custom,Capacitor_SMD:C_0603_1608Metric";
+        label = "C306 - C_*";
+    };
+
+    c307 {
+        compatible = "custom,Capacitor_SMD:C_0402_1005Metric";
+        label = "C307 - C_*";
+    };
+
+    d301 {
+        compatible = "custom,Diode_SMD:D_SOD-323";
+        label = "D301 - D*SOD?323*";
+    };
+
+    ic301 {
+        compatible = "custom,Package_TO_SOT_SMD:SOT-665";
+        label = "IC301 - MCU.kicad_sch";
+    };
+
+    ic302 {
+        compatible = "custom,Package_TO_SOT_SMD:TSOT-23-6";
+        label = "IC302 - MCU.kicad_sch";
+    };
+
+    ic303 {
+        compatible = "custom,Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm";
+        label = "IC303 - MCU.kicad_sch";
+    };
+
+    ic304 {
+        compatible = "custom,Package_QFN:UQFN-10_1.55x2.05mm_P0.5mm";
+        label = "IC304 - MCU.kicad_sch";
+    };
+
+    ic305 {
+        compatible = "custom,Package_QFN:XQFN-12-1.7x2mm_P0.4mm";
+        label = "IC305 - MCU.kicad_sch";
+    };
+
+    ic306 {
+        compatible = "custom,Package_QFN:WQFN-10_2x2mm_P0.5mm";
+        label = "IC306 - MCU.kicad_sch";
+    };
+
+    ic307 {
+        compatible = "custom,Micro Crystal:RV-8263-C8";
+        label = "IC307 - MCU.kicad_sch";
+    };
+
+    jp301 {
+        compatible = "custom,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm";
+        label = "JP301 - Jumper* TestPoint*2Pads* TestPoint*Bridge*";
+    };
+
+    jp302 {
+        compatible = "custom,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm";
+        label = "JP302 - Jumper* TestPoint*2Pads* TestPoint*Bridge*";
+    };
+
+    m301 {
+        compatible = "custom,uBlox:NORA-B106";
+        label = "M301 - MCU.kicad_sch";
+    };
+
+    q301 {
+        compatible = "custom,Package_TO_SOT_SMD:SOT-323_SC-70";
+        label = "Q301 - SOT?323*";
+    };
+
+    q302 {
+        compatible = "custom,Package_SOT_SMD:SOT-883";
+        label = "Q302 - SOT?23*";
+    };
+
+    q303 {
+        compatible = "custom,Package_SOT_SMD:SOT-883";
+        label = "Q303 - SOT?23*";
+    };
+
+    r301 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R301 - R_*";
+    };
+
+    r302 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R302 - R_*";
+    };
+
+    r303 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R303 - R_*";
+    };
+
+    r304 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R304 - R_*";
+    };
+
+    r305 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R305 - R_*";
+    };
+
+    r306 {
+        compatible = "custom,Resistor_SMD:R_0402_1005Metric";
+        label = "R306 - R_*";
+    };
+
+    r307 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R307 - R_*";
+    };
+
+    r308 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R308 - R_*";
+    };
+
+    r309 {
+        compatible = "custom,Resistor_SMD:R_0402_1005Metric";
+        label = "R309 - R_*";
+    };
+
+    r310 {
+        compatible = "custom,Resistor_SMD:R_0402_1005Metric";
+        label = "R310 - R_*";
+    };
+
+    r311 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R311 - R_*";
+    };
+
+    r312 {
+        compatible = "custom,Resistor_SMD:R_0603_1608Metric";
+        label = "R312 - R_*";
+    };
+
+    r313 {
+        compatible = "custom,Resistor_SMD:R_0402_1005Metric";
+        label = "R313 - R_*";
+    };
+
+    s301 {
+        compatible = "custom,E-Switch:TL6340AF160Q_Modified";
+        label = "S301 - switch normally-open pushbutton push-button";
+    };
+
+    s302 {
+        compatible = "custom,E-Switch:TL6340AF160Q_Modified";
+        label = "S302 - switch normally-open pushbutton push-button";
+    };
+
+    s303 {
+        compatible = "custom,E-Switch:TL6340AF160Q_Modified";
+        label = "S303 - switch normally-open pushbutton push-button";
+    };
+
+    s304 {
+        compatible = "custom,E-Switch:TL6340AF160Q_Modified";
+        label = "S304 - switch normally-open pushbutton push-button";
+    };
+
+    x301 {
+        compatible = "custom,Pomagtor:RD90_LZH0230529-004_DJ-5PIN_PH2_54";
+        label = "X301 - Connector*:*_1x??_*";
+    };
+
+    x302 {
+        compatible = "custom,unknown";
+        label = "X302 - unknown";
+        pins {
+            pinA1 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinA2 {
+                pin-name = "P0.12/TRACECLK";
+                pin-type = "bidirectional";
+            };
+            pinA3 {
+                pin-name = "P1.03/I2C";
+                pin-type = "bidirectional";
+            };
+            pinA4 {
+                pin-name = "P1.00";
+                pin-type = "bidirectional";
+            };
+            pinA5 {
+                pin-name = "P0.20";
+                pin-type = "bidirectional";
+            };
+            pinA6 {
+                pin-name = "NC";
+                pin-type = "no_connect";
+            };
+            pinA7 {
+                pin-name = "VDD";
+                pin-type = "power_in";
+            };
+            pinA8 {
+                pin-name = "VDDH";
+                pin-type = "power_in";
+            };
+            pinA9 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinB1 {
+                pin-name = "P0.08/TRACEDATA[3]";
+                pin-type = "bidirectional";
+            };
+            pinB2 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinB3 {
+                pin-name = "P0.11/TRACEDATA[0]";
+                pin-type = "bidirectional";
+            };
+            pinB4 {
+                pin-name = "P1.02/I2C";
+                pin-type = "bidirectional";
+            };
+            pinB5 {
+                pin-name = "P0.03/NFC2";
+                pin-type = "bidirectional";
+            };
+            pinB6 {
+                pin-name = "P0.01/XL2";
+                pin-type = "bidirectional";
+            };
+            pinB7 {
+                pin-name = "VDD";
+                pin-type = "power_in";
+            };
+            pinB8 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinB9 {
+                pin-name = "VBUS";
+                pin-type = "power_in";
+            };
+            pinC1 {
+                pin-name = "P0.10/TRACEDATA[1]";
+                pin-type = "bidirectional";
+            };
+            pinC2 {
+                pin-name = "P0.09/TRACEDATA[2]";
+                pin-type = "bidirectional";
+            };
+            pinC4 {
+                pin-name = "P1.01";
+                pin-type = "bidirectional";
+            };
+            pinC5 {
+                pin-name = "P0.02/NFC1";
+                pin-type = "bidirectional";
+            };
+            pinC6 {
+                pin-name = "P0.00/XL1";
+                pin-type = "bidirectional";
+            };
+            pinC8 {
+                pin-name = "P0.22";
+                pin-type = "bidirectional";
+            };
+            pinC9 {
+                pin-name = "D+";
+                pin-type = "bidirectional";
+            };
+            pinD1 {
+                pin-name = "P0.15/QSPI[2]";
+                pin-type = "bidirectional";
+            };
+            pinD2 {
+                pin-name = "P0.13/QSPI[0]";
+                pin-type = "bidirectional";
+            };
+            pinD3 {
+                pin-name = "P0.07/AIN3";
+                pin-type = "bidirectional";
+            };
+            pinD7 {
+                pin-name = "P0.23";
+                pin-type = "bidirectional";
+            };
+            pinD8 {
+                pin-name = "P0.04/AIN0";
+                pin-type = "bidirectional";
+            };
+            pinD9 {
+                pin-name = "D-";
+                pin-type = "bidirectional";
+            };
+            pinE1 {
+                pin-name = "P0.18/QSPI_CS";
+                pin-type = "bidirectional";
+            };
+            pinE2 {
+                pin-name = "P0.14/QSPI[1]";
+                pin-type = "bidirectional";
+            };
+            pinE3 {
+                pin-name = "P0.21";
+                pin-type = "bidirectional";
+            };
+            pinE4 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinE5 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinE7 {
+                pin-name = "P0.06/AIN2";
+                pin-type = "bidirectional";
+            };
+            pinE8 {
+                pin-name = "P0.05/AIN1";
+                pin-type = "bidirectional";
+            };
+            pinE9 {
+                pin-name = "P1.05";
+                pin-type = "bidirectional";
+            };
+            pinF1 {
+                pin-name = "P0.17/QSPI_CLK";
+                pin-type = "bidirectional";
+            };
+            pinF2 {
+                pin-name = "P0.16/QSPI[3]";
+                pin-type = "bidirectional";
+            };
+            pinF3 {
+                pin-name = "P0.19";
+                pin-type = "bidirectional";
+            };
+            pinF4 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinF5 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinF7 {
+                pin-name = "P1.07";
+                pin-type = "bidirectional";
+            };
+            pinF8 {
+                pin-name = "P1.14";
+                pin-type = "bidirectional";
+            };
+            pinF9 {
+                pin-name = "P1.15";
+                pin-type = "bidirectional";
+            };
+            pinG1 {
+                pin-name = "P1.06";
+                pin-type = "bidirectional";
+            };
+            pinG2 {
+                pin-name = "P0.26/AIN5";
+                pin-type = "bidirectional";
+            };
+            pinG3 {
+                pin-name = "P0.25/AIN4";
+                pin-type = "bidirectional";
+            };
+            pinG4 {
+                pin-name = "P1.04";
+                pin-type = "bidirectional";
+            };
+            pinG5 {
+                pin-name = "P1.08";
+                pin-type = "bidirectional";
+            };
+            pinG7 {
+                pin-name = "P1.09";
+                pin-type = "bidirectional";
+            };
+            pinG8 {
+                pin-name = "P1.12";
+                pin-type = "bidirectional";
+            };
+            pinG9 {
+                pin-name = "P1.13";
+                pin-type = "bidirectional";
+            };
+            pinH1 {
+                pin-name = "P0.24";
+                pin-type = "bidirectional";
+            };
+            pinH2 {
+                pin-name = "SWDIO";
+                pin-type = "bidirectional";
+            };
+            pinH3 {
+                pin-name = "P0.27/AIN6";
+                pin-type = "bidirectional";
+            };
+            pinH7 {
+                pin-name = "P0.29";
+                pin-type = "bidirectional";
+            };
+            pinH8 {
+                pin-name = "P0.30";
+                pin-type = "bidirectional";
+            };
+            pinH9 {
+                pin-name = "P1.11";
+                pin-type = "bidirectional";
+            };
+            pinJ1 {
+                pin-name = "NC";
+                pin-type = "no_connect";
+            };
+            pinJ2 {
+                pin-name = "SWDCLK";
+                pin-type = "input";
+            };
+            pinJ3 {
+                pin-name = "~{RESET}";
+                pin-type = "input";
+            };
+            pinJ4 {
+                pin-name = "NC";
+                pin-type = "no_connect";
+            };
+            pinJ5 {
+                pin-name = "NC";
+                pin-type = "no_connect";
+            };
+            pinJ7 {
+                pin-name = "P1.10";
+                pin-type = "bidirectional";
+            };
+            pinJ8 {
+                pin-name = "P0.28/AIN7";
+                pin-type = "bidirectional";
+            };
+            pinJ9 {
+                pin-name = "P0.31";
+                pin-type = "bidirectional";
+            };
+            pinK1 {
+                pin-name = "NC";
+                pin-type = "no_connect";
+            };
+            pinK2 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinK3 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinK5 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinK7 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinK8 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinK9 {
+                pin-name = "NC";
+                pin-type = "no_connect";
+            };
+            pinL1 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinL9 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinM1 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinM2 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinM8 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+            pinM9 {
+                pin-name = "GND";
+                pin-type = "power_in";
+            };
+        };
+    };
+
+    x303 {
+        compatible = "custom,TestPoint:TestPoint_Pad_1.0x1.0mm";
+        label = "X303 - Connector*:*_1x??_*";
+    };
+
+    x304 {
+        compatible = "custom,TestPoint:TestPoint_Pad_1.0x1.0mm";
+        label = "X304 - Connector*:*_1x??_*";
+    };
+
+};
