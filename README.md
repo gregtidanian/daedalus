@@ -14,6 +14,20 @@ A devicetree is a datastructure that describes hardware to driver models and pro
 
 The device tree source file generation will be based on the open source zephyr project [ZSWatch](https://github.com/jakkra/ZSWatch), including the [hardware design files](https://github.com/jakkra/ZSWatch-HW/tree/f00c755fa8d6e1f00ff1e177645d56457bea2659) by [Jakob Krantz](https://github.com/jakkra).
 
+An image of the hardware is shown below.
+
+![Screenshot 2024-11-10 at 20 45 46](https://github.com/user-attachments/assets/56ecb6fb-326b-4189-a9fc-1325c5832632)
+
+## Generated Files
+
+In the folder "designtree" the file dtsgenerator.py contains the script that parses the netlist file and generates the DTS file.
+
+The netlist file is "ZSWatch.net" and the generated DTS file is called "ZSWatch.dts".
+
+To run the script from the terminal, navigate to the designtree folder and execute the following command:
+
+`python dtsgenerator.py`
+
 # Pin Map Header File Generation
 The command line tool had the initial goal of:
 
@@ -62,7 +76,13 @@ The drawbacks of using a netlist file include:
 
 The generated netlist file is _DesignESP32PCB.net_.
 
-The parsing script written is _pinmapgenerator.py_ and the generated header file is pinmap.h. The contents of the generated header file include:
+The parsing script written is _pinmapgenerator.py_ and the generated header file is pinmap.h. 
+
+To run the script from the terminal navigate to the pinmap folder and execute the following command:
+
+`python pinmapgenerator.py`
+
+The contents of the generated header file include:
 
 - Pin definitions
 ```
