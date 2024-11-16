@@ -22,11 +22,29 @@ An image of the hardware is shown below.
 
 In the folder "designtree" the file dtsgenerator.py contains the script that parses the netlist file and generates the DTS file.
 
-The netlist file is "ZSWatch.net" and the generated DTS file is called "ZSWatch.dts".
-
 To run the script from the terminal, navigate to the designtree folder and execute the following command:
 
 `python dtsgenerator.py`
+
+The software generates a folder named dts, with the following structure:
+
+- **Bindings** folder containing .yaml files for each component
+- **Boards** folder containing board specific .dts file. Right now the name and contents of the .dts file are taken from the .net (netlist) file being used to generate it
+- **Common** folder containing .dtsi file
+
+## Validation Criteria
+
+## Validation Checklist
+
+| **Characteristic**              | **What to Check Against**                                                                 |
+|--------------------------|-----------------------------------------------------------------------------------|
+| Folder Structure         | Correct `dts`, `bindings`, `common`, and `boards` subdirectories.                |
+| Component Definitions    | All components in the netlist are present in `common.dtsi`.                      |
+| YAML Bindings            | Each `compatible` in `common.dtsi` has a corresponding `.yaml` file with valid syntax. |
+| Board File               | Includes `common.dtsi` and is named correctly.                                   |
+| Integration              | Zephyr builds successfully with the generated device tree.                       |
+| Functionality            | Firmware works on target hardware, and all peripherals behave as described in the device tree. |
+
 
 # Pin Map Header File Generation
 The command line tool had the initial goal of:
