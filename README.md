@@ -34,8 +34,6 @@ The software generates a folder named dts, with the following structure:
 
 ## Validation Criteria
 
-## Validation Checklist
-
 | **Characteristic**              | **What to Check Against**                                                                 |
 |--------------------------|-----------------------------------------------------------------------------------|
 | Folder Structure         | Correct `dts`, `bindings`, `common`, and `boards` subdirectories.                |
