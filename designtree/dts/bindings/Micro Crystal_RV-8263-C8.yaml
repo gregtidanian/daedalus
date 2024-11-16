@@ -1,0 +1,6 @@
+compatible: custom,Micro Crystal:RV-8263-C8
+description: Binding for Micro Crystal:RV-8263-C8
+properties:
+  label:
+    description: Human-readable label
+    type: string

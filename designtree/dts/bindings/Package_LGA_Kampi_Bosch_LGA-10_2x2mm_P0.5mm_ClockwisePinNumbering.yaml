@@ -1,0 +1,6 @@
+compatible: custom,Package_LGA_Kampi:Bosch_LGA-10_2x2mm_P0.5mm_ClockwisePinNumbering
+description: Binding for Package_LGA_Kampi:Bosch_LGA-10_2x2mm_P0.5mm_ClockwisePinNumbering
+properties:
+  label:
+    description: Human-readable label
+    type: string

@@ -1,0 +1,6 @@
+compatible: custom,Package_QFN:UQFN-10_1.55x2.05mm_P0.5mm
+description: Binding for Package_QFN:UQFN-10_1.55x2.05mm_P0.5mm
+properties:
+  label:
+    description: Human-readable label
+    type: string

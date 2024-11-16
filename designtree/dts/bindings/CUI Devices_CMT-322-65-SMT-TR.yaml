@@ -1,0 +1,6 @@
+compatible: custom,CUI Devices:CMT-322-65-SMT-TR
+description: Binding for CUI Devices:CMT-322-65-SMT-TR
+properties:
+  label:
+    description: Human-readable label
+    type: string

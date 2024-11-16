@@ -1,0 +1,6 @@
+compatible: custom,Package_LGA_Kampi:Bosch_LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y
+description: Binding for Package_LGA_Kampi:Bosch_LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y
+properties:
+  label:
+    description: Human-readable label
+    type: string

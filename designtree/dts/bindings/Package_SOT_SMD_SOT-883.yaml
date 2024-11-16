@@ -1,0 +1,6 @@
+compatible: custom,Package_SOT_SMD:SOT-883
+description: Binding for Package_SOT_SMD:SOT-883
+properties:
+  label:
+    description: Human-readable label
+    type: string

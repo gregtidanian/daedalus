@@ -1,0 +1,6 @@
+compatible: custom,Molex:78171-0002
+description: Binding for Molex:78171-0002
+properties:
+  label:
+    description: Human-readable label
+    type: string

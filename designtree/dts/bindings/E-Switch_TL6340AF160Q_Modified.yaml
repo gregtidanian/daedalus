@@ -1,0 +1,6 @@
+compatible: custom,E-Switch:TL6340AF160Q_Modified
+description: Binding for E-Switch:TL6340AF160Q_Modified
+properties:
+  label:
+    description: Human-readable label
+    type: string

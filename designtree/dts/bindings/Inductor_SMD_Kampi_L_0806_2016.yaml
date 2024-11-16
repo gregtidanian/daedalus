@@ -1,0 +1,6 @@
+compatible: custom,Inductor_SMD_Kampi:L_0806_2016
+description: Binding for Inductor_SMD_Kampi:L_0806_2016
+properties:
+  label:
+    description: Human-readable label
+    type: string

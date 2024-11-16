@@ -1,0 +1,6 @@
+compatible: custom,Package_TO_SOT_SMD:TSOT-23-6
+description: Binding for Package_TO_SOT_SMD:TSOT-23-6
+properties:
+  label:
+    description: Human-readable label
+    type: string

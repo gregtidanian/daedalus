@@ -1,0 +1,6 @@
+compatible: custom,Resistor_SMD:R_0603_1608Metric
+description: Binding for Resistor_SMD:R_0603_1608Metric
+properties:
+  label:
+    description: Human-readable label
+    type: string

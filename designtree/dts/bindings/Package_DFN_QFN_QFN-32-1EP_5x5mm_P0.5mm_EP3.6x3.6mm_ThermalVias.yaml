@@ -1,0 +1,6 @@
+compatible: custom,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias
+description: Binding for Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias
+properties:
+  label:
+    description: Human-readable label
+    type: string

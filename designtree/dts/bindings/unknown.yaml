@@ -1,0 +1,6 @@
+compatible: custom,unknown
+description: Binding for unknown
+properties:
+  label:
+    description: Human-readable label
+    type: string

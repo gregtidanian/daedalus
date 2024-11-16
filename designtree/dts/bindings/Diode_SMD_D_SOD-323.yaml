@@ -1,0 +1,6 @@
+compatible: custom,Diode_SMD:D_SOD-323
+description: Binding for Diode_SMD:D_SOD-323
+properties:
+  label:
+    description: Human-readable label
+    type: string

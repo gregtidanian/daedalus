@@ -1,0 +1,6 @@
+compatible: custom,Knowles:SPK0641HT4H-1
+description: Binding for Knowles:SPK0641HT4H-1
+properties:
+  label:
+    description: Human-readable label
+    type: string

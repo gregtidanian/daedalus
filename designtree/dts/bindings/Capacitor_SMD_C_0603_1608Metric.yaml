@@ -1,0 +1,6 @@
+compatible: custom,Capacitor_SMD:C_0603_1608Metric
+description: Binding for Capacitor_SMD:C_0603_1608Metric
+properties:
+  label:
+    description: Human-readable label
+    type: string

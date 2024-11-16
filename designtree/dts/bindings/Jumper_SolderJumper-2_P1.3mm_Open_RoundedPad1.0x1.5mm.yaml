@@ -1,0 +1,6 @@
+compatible: custom,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
+description: Binding for Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
+properties:
+  label:
+    description: Human-readable label
+    type: string

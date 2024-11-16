@@ -1,0 +1,6 @@
+compatible: custom,Pomagtor:RD90_LZH0230529-004_DJ-5PIN_PH2_54
+description: Binding for Pomagtor:RD90_LZH0230529-004_DJ-5PIN_PH2_54
+properties:
+  label:
+    description: Human-readable label
+    type: string

@@ -1,0 +1,6 @@
+compatible: custom,uBlox:NORA-B106
+description: Binding for uBlox:NORA-B106
+properties:
+  label:
+    description: Human-readable label
+    type: string

@@ -1,0 +1,6 @@
+compatible: custom,Resistor_SMD:R_0402_1005Metric
+description: Binding for Resistor_SMD:R_0402_1005Metric
+properties:
+  label:
+    description: Human-readable label
+    type: string

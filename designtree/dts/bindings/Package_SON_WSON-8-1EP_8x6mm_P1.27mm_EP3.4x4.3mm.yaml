@@ -1,0 +1,6 @@
+compatible: custom,Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm
+description: Binding for Package_SON:WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm
+properties:
+  label:
+    description: Human-readable label
+    type: string

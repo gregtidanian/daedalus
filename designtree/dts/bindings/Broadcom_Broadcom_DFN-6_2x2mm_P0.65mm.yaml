@@ -1,0 +1,6 @@
+compatible: custom,Broadcom:Broadcom_DFN-6_2x2mm_P0.65mm
+description: Binding for Broadcom:Broadcom_DFN-6_2x2mm_P0.65mm
+properties:
+  label:
+    description: Human-readable label
+    type: string
