@@ -1,0 +1,130 @@
+/*
+ * The following DTSI file is made from information taken from the schematic
+ *
+ * The schematic is from the hardware files taken from https://www.nordicsemi.com/Products/Development-hardware/nRF5340-DK/Download#infotabs
+ */
+
+ #include <nordic/nrf5340_cpuapp_qkaa.dtsi>
+
+ / {
+
+	chosen {
+
+        // Nothing from the schematic file specifically gives me any info on the chosen section
+
+	};
+
+	leds {
+		compatible = "gpio-leds";
+		led0: led_0 { // In the schematic LEDs are indexed at 1
+			gpios = <&gpio0 28 GPIO_ACTIVE_LOW>; // Schematics infer that the GPIOs should be active low, due to current flowing from VDD_PER to GPIO
+			label = "LED 0";
+		};
+		led1: led_1 {
+			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
+			label = "LED 1";
+		};
+		led2: led_2 {
+			gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+			label = "LED 2";
+		};
+		led3: led_3 {
+			gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;
+			label = "LED 3";
+		};
+	};
+
+	pwmleds {
+
+        // Could not find info on PWM from schematics
+
+	};
+	buttons {
+		compatible = "gpio-keys";
+		button0: button_0 {
+			gpios = <&gpio0 23 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "Button 1";
+			// no info on zephyr,code = <INPUT_KEY_0>; however it is part of linux input event code system and links to an application - layer decision
+		};
+		button1: button_1 {
+			gpios = <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "Button 2";
+			// no info on zephyr,code = <INPUT_KEY_1>;
+		};
+		button2: button_2 {
+			gpios = <&gpio0 8 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "Button 3";
+			// no info on zephyr,code = <INPUT_KEY_2>;
+		};
+		button3: button_3 {
+			gpios = <&gpio0 9 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "Button 4";
+			// no info on zephyr,code = <INPUT_KEY_3>;
+		};
+	};
+
+	arduino_header: connector {
+		compatible = "arduino-header-r3";
+		#gpio-cells = <2>;
+		// no info on gpio-map-mask however could be calculated
+		// no info on gpio-map-pass-thru however could be calculated
+		gpio-map = <0 0 &gpio0 4 0>,	/* A0 */
+			   <1 0 &gpio0 5 0>,	/* A1 */
+			   <2 0 &gpio0 6 0>,	/* A2 */
+			   <3 0 &gpio0 7 0>,	/* A3 */
+			   <4 0 &gpio0 25 0>,	/* A4 */
+			   <5 0 &gpio0 26 0>,	/* A5 */
+			   <6 0 &gpio1 0 0>,	/* D0 */
+			   <7 0 &gpio1 1 0>,	/* D1 */
+			   <8 0 &gpio1 4 0>,	/* D2 */
+			   <9 0 &gpio1 5 0>,	/* D3 */
+			   <10 0 &gpio1 6 0>,	/* D4 */
+			   <11 0 &gpio1 7 0>,	/* D5 */
+			   <12 0 &gpio1 8 0>,	/* D6 */
+			   <13 0 &gpio1 9 0>,	/* D7 */
+			   <14 0 &gpio1 10 0>,	/* D8 */
+			   <15 0 &gpio1 11 0>,	/* D9 */
+			   <16 0 &gpio1 12 0>,	/* D10 */
+			   <17 0 &gpio1 13 0>,	/* D11 */
+			   <18 0 &gpio1 14 0>,	/* D12 */
+			   <19 0 &gpio1 15 0>,	/* D13 */
+			   <20 0 &gpio1 2 0>,	/* D14 */
+			   <21 0 &gpio1 3 0>;	/* D15 */
+	};
+
+	arduino_adc: analog-connector { // No info on the schematic that these GPIOs to the ADC
+		compatible = "arduino,uno-adc";
+		#io-channel-cells = <1>;
+		io-channel-map = <0 &adc 0>,	/* A0 = P0.4 = AIN0 */
+				 <1 &adc 1>,	/* A1 = P0.5 = AIN1 */
+				 <2 &adc 2>,	/* A2 = P0.6 = AIN2 */
+				 <3 &adc 3>,	/* A3 = P0.7 = AIN3 */
+				 <4 &adc 4>,	/* A4 = P0.25 = AIN4 */
+				 <5 &adc 5>;	/* A5 = P0.26 = AIN5 */
+	};
+
+	gpio_fwd: nrf-gpio-forwarder {
+		compatible = "nordic,nrf-gpio-forwarder";
+		status = "okay";
+		uart {
+			gpios = <&gpio1 1 0>, <&gpio1 0 0>, <&gpio0 11 0>, <&gpio0 10 0>;
+		};
+	};
+
+	/* These aliases are provided for compatibility with samples */
+	aliases {
+		led0 = &led0;
+		led1 = &led1;
+		led2 = &led2;
+		led3 = &led3;
+		pwm-led0 = &pwm_led0;
+		sw0 = &button0; // In the schematic switches are indexed at 1
+		sw1 = &button1;
+		sw2 = &button2;
+		sw3 = &button3;
+		bootloader-led0 = &led0;
+		mcuboot-button0 = &button0; //IMCU boot pin found but no link to button
+		mcuboot-led0 = &led0; // IMCU LED on the schematic but it is labelled as LED 5, not LED 1 (or 0 from dtsi file)
+		watchdog0 = &wdt0; // No mention of watchdog in schematic
+	};
+};
