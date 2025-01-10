@@ -1,4 +1,4 @@
-*The following comes entirely from conversations and ideas from [Walter Jacob](https://github.com/jacobw56), founder of [Overkill Projects](https://overkillprojects.com/)*.
+*The following is in partnership with [Walter Jacob](https://github.com/jacobw56), founder of [Overkill Projects](https://overkillprojects.com/)*.
 
 Firmware development typically involves referring to information from electronics design files, as well as component datasheets.
 
